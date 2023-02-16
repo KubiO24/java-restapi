@@ -9,14 +9,14 @@ import spark.Response;
 
 
 public class App {
-    private static HashMap<String, User> users = new HashMap<>();
-    private static UserServiceImpl userServiceImpl = new UserServiceImpl();
+    private static final HashMap<String, User> users = new HashMap<>();
+    private static final UserServiceImpl userServiceImpl = new UserServiceImpl();
 
     public static void main(String[] args) {
         port(7777);
-        get("/api/users", (req, res) -> userList(req, res));
-        get("/api/users/:id", (req, res) -> user(req, res));
-        post("/api/users", (req, res) -> addUser(req, res));
+        get("/api/users", App::userList);
+        get("/api/users/:id", App::user);
+        post("/api/users", App::addUser);
     }
 
     static String userList(Request req, Response res) {
