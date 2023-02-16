@@ -1,0 +1,484 @@
+OPTIONS http://localhost:7777/api/users/1
+
+<> 2023-02-16T142252.200.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-02-16T142250.200.html
+
+###
+
+OPTIONS http://localhost:7777/api/users/1
+
+<> 2023-02-16T142245.200.html
+
+###
+
+DELETE http://localhost:7777/api/users/1
+
+<> 2023-02-16T142243.200.html
+
+###
+
+OPTIONS http://localhost:7777/api/users/1
+
+<> 2023-02-16T142212.200.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-02-16T142209.200.html
+
+###
+
+OPTIONS http://localhost:7777/api/users/1
+
+<> 2023-02-16T142206.200.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-02-16T141801.200.html
+
+###
+
+GET http://localhost:7777/api/users/1
+Accept: application/json
+
+<> 2023-02-16T141613.200.json
+
+###
+
+GET http://localhost:7777/api/users/1
+Accept: application/json
+
+<> 2023-02-16T141611.200.json
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-02-16T141439.200.html
+
+###
+
+GET http://localhost:7777/api/users
+
+<> 2023-02-16T141403.200.json
+
+###
+
+GET http://localhost:7777/api/users/1
+Accept: application/json
+
+<> 2023-02-16T141401.200.json
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-02-16T141353.200.html
+
+###
+
+GET http://localhost:7777/api/users/1
+Accept: application/json
+
+<> 2023-02-16T135622.200.json
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-02-16T135611.200.html
+
+###
+
+GET http://localhost:7777/api/users/1
+Accept: application/json
+
+<> 2023-02-16T135514.200.json
+
+###
+
+POST http://localhost:7777/api/users/1
+Accept: application/json
+
+<> 2023-02-16T135447.404.html
+
+###
+
+POST http://localhost:7777/api/users/1
+Accept: application/json
+
+<> 2023-02-16T135436.404.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-02-16T135429.200.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-02-16T135011.200.html
+
+###
+
+POST http://localhost:7777/api/users/1
+Accept: application/json
+
+<> 2023-02-16T135005.404.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-02-16T134919.200.html
+
+###
+
+POST http://localhost:7777/api/users/1
+Accept: application/json
+
+<> 2023-02-16T134723.404.html
+
+###
+
+POST http://localhost:7777/api/users/1
+Accept: application/json
+
+<> 2023-02-16T134720.404.html
+
+###
+
+POST http://localhost:7777/api/users/id=1
+Accept: application/json
+
+<> 2023-02-16T134708.404.html
+
+###
+
+POST http://localhost:7777/api/users/id=1
+Accept: application/json
+
+<> 2023-02-16T134503.404.html
+
+###
+
+POST http://localhost:7777/api/users/id=1
+Accept: application/json
+
+<> 2023-02-16T134501.404.html
+
+###
+
+POST http://localhost:7777/api/users?id=1
+Accept: application/json
+
+<> 2023-02-16T134455.500.html
+
+###
+
+POST http://localhost:7777/api/users?id=1
+Accept: application/json
+
+<> 2023-02-16T134452.500.html
+
+###
+
+POST http://localhost:7777/api/users/?id=1
+Accept: application/json
+
+<> 2023-02-16T134441.404.html
+
+###
+
+GET http://localhost:7777/api/users
+Accept: application/json
+
+<> 2023-02-16T133131.200.json
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-02-16T133125.200.html
+
+###
+
+GET http://localhost:7777/api/users
+Accept: application/json
+
+<> 2023-02-16T133120.200.json
+
+###
+
+GET http://localhost:7777/api/users
+Accept: application/json
+
+<> 2023-02-16T132947.200.html
+
+###
+
+GET http://localhost:7777/api/users
+Accept: application/json
+
+<> 2023-02-16T132942.200.html
+
+###
+
+GET http://localhost:7777/api/users
+Accept: application/json
+
+<> 2023-02-16T132929.200.html
+
+###
+
+GET http://localhost:7777/api/users
+Accept: application/json
+
+<> 2023-02-16T132925.200.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-02-16T132905.200.html
+
+###
+
+GET http://localhost:7777/api/users
+Accept: application/json
+
+<> 2023-02-16T132856.200.html
+
+###
+
+GET http://localhost:7777/api/users
+Accept: application/json
+
+<> 2023-02-16T132846.200.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-02-16T132429.200.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-01-05T142734.200.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-01-05T142638.200.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-01-05T142545.500.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-01-05T142330.200.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-01-05T141035.200.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-01-05T140655.404.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-01-05T140608.404.html
+
+###
+
+POST http://localhost:7777/api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "imie",
+  "lastName": "nazwisko",
+  "email": "mail"
+}
+
+<> 2023-01-05T140541.404.html
+
+###
+

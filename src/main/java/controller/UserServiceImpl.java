@@ -32,6 +32,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Boolean userExist(String id) {
-        return null;
+        return users.containsKey(id);
     }
 }
