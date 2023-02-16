@@ -21,8 +21,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User editUser(User user) {
-        return null;
+    public User editUser(String id, User user) {
+        users.remove(id);
+        users.put(user.getId(), user);
+        return user;
     }
 
     @Override

@@ -1,3 +1,17 @@
+POST http://localhost:7777/api/users/1
+Content-Type: application/json
+
+{
+  "id": 12,
+  "firstName": "imie2",
+  "lastName": "nazwisko2",
+  "email": "mail2"
+}
+
+<> 2023-02-16T143459.404.html
+
+###
+
 OPTIONS http://localhost:7777/api/users/1
 
 <> 2023-02-16T142252.200.html
@@ -465,20 +479,6 @@ Content-Type: application/json
 }
 
 <> 2023-01-05T140608.404.html
-
-###
-
-POST http://localhost:7777/api/users
-Content-Type: application/json
-
-{
-  "id": 1,
-  "firstName": "imie",
-  "lastName": "nazwisko",
-  "email": "mail"
-}
-
-<> 2023-01-05T140541.404.html
 
 ###
 

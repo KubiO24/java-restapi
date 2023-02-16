@@ -10,7 +10,7 @@ public interface UserService {
     void addUser(User user);
     HashMap<String, User> getUsers();
     User getUser(String id);
-    User editUser(User user);
+    User editUser(String id, User user);
     void deleteUser(String id);
     Boolean userExist(String id);
 }

@@ -18,6 +18,7 @@ public class App {
         get("/api/users", App::userList);
         get("/api/users/:id", App::user);
         post("/api/users", App::addUser);
+        put("/api/users/:id", App::editUser);
         options("/api/users/:id", App::userExist);
         delete("/api/users/:id", App::deleteUser);
     }
@@ -43,6 +44,14 @@ public class App {
         User user = gson.fromJson(req.body(), User.class);
         userServiceImpl.addUser(user);
         return "added: " + req.body();
+    }
+
+    static String editUser(Request req, Response res) {
+        Gson gson = new Gson();
+        String id = req.params("id");
+        User newUser = gson.fromJson(req.body(), User.class);
+        userServiceImpl.editUser(id, newUser);
+        return "edited: " + req.body();
     }
 
     static Boolean userExist(Request req, Response res) {
