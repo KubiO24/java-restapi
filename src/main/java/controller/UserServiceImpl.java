@@ -5,8 +5,6 @@ import model.User;
 import java.util.HashMap;
 
 public class UserServiceImpl implements UserService {
-    private static final HashMap<String, User> users = new HashMap<>();
-
     @Override
     public void addUser(User user) {
         users.put(user.getId(), user);
