@@ -15,6 +15,7 @@ public class App {
     public static void main(String[] args) {
         port(7777);
         get("/api/users", (req, res) -> userList(req, res));
+        get("/api/users/:id", (req, res) -> user(req, res));
         post("/api/users", (req, res) -> addUser(req, res));
     }
 
@@ -22,6 +23,14 @@ public class App {
         res.type("application/json");
         Gson gson = new Gson();
         return gson.toJson(users);
+    }
+
+    static String user(Request req, Response res) {
+        res.type("application/json");
+        Gson gson = new Gson();
+        String id = req.params("id");
+        String userData = gson.toJson(users.get(id));
+        return "user: " + userData;
     }
 
     static String addUser(Request req, Response res) {
