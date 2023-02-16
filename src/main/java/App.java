@@ -3,13 +3,14 @@ import controller.UserServiceImpl;
 import model.User;
 
 import java.util.HashMap;
+import java.util.Objects;
+
 import static spark.Spark.*;
 import spark.Request;
 import spark.Response;
 
 
 public class App {
-    private static final HashMap<String, User> users = new HashMap<>();
     private static final UserServiceImpl userServiceImpl = new UserServiceImpl();
 
     public static void main(String[] args) {
@@ -17,26 +18,35 @@ public class App {
         get("/api/users", App::userList);
         get("/api/users/:id", App::user);
         post("/api/users", App::addUser);
+        delete("/api/users/:id", App::deleteUser);
     }
 
     static String userList(Request req, Response res) {
         res.type("application/json");
         Gson gson = new Gson();
-        return gson.toJson(users);
+        return gson.toJson(userServiceImpl.getUsers());
     }
 
     static String user(Request req, Response res) {
         res.type("application/json");
         Gson gson = new Gson();
         String id = req.params("id");
-        String userData = gson.toJson(users.get(id));
+        String userData = gson.toJson(userServiceImpl.getUser(id));
+        if(Objects.equals(userData, "null"))
+            return "{}";
         return "user: " + userData;
     }
 
     static String addUser(Request req, Response res) {
         Gson gson = new Gson();
         User user = gson.fromJson(req.body(), User.class);
-        users.put(user.getId(), user);
-        return "dodano: " + req.body();
+        userServiceImpl.addUser(user);
+        return "added: " + req.body();
+    }
+
+    static String deleteUser(Request req, Response res) {
+        String id = req.params("id");
+        userServiceImpl.deleteUser(id);
+        return "deleted user with id=" + id;
     }
 }

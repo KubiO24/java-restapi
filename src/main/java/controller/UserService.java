@@ -2,8 +2,11 @@ package controller;
 
 import model.User;
 
+import java.util.HashMap;
+
 public interface UserService {
     void addUser(User user);
+    HashMap<String, User> getUsers();
     User getUser(String id);
     User editUser(User user);
     void deleteUser(String id);
